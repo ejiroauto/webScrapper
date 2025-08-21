@@ -3,11 +3,12 @@ import requests
 import re
 import time
  
-time.sleep(30)                                          # This pauses execution for 30 seconds. 
+time.sleep(600)                                          # This pauses execution for 30 seconds. 
 url = "https://remoteok.com/remote-python-jobs"         # We are scrapping a live website so a url is used. 
 response = requests.get(url)                            # This retrieves the url.
 soup = BeautifulSoup(response.content, "html.parser")   # This passes the urls content to through a html reader/parser. 
+print(response.status_code)                             #Check The outcome of the request. 
 
-jobtitles = soup.find_all('h2', class_= 'title')           # This retrieves all the jobs post containing python as when I inspected the web page it was in a h2 container. - this did not print anything. 
-for jobtitles in jobtitles:
-    print(jobtitles.text)
+
+#jobs = soup.find('h2', attrs={'itemprop': 'title'})     # This retrieves the first job post becasue job titles are in the h2 htlml tag with an attribute of itemprop=title. 
+print(response.status_code)
