@@ -53,4 +53,4 @@ driver.quit()
 # and i plan to run it on docker on my macbook 
 #Add scheduling maybe with jenkins or to the script
 #create simple api
-# deploy to cloud 
+#deploy to cloud 
