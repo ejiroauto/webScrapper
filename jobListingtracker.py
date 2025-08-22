@@ -41,3 +41,7 @@ jobs = driver.find_elements(By.TAG_NAME, 'h2')
 #Print the job titles. 
 for i in jobs:
     print(i.text)
+    
+    
+
+driver.quit()
