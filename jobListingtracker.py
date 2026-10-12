@@ -48,9 +48,4 @@ driver.quit()
 
 
 
-#i will add another site and add convert it into a csv that stores the job titles and links 
-# will then store it in a database
-# and i plan to run it on docker on my macbook 
-#Add scheduling maybe with jenkins or to the script
-#create simple api
-#deploy to cloud 
+
